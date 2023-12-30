@@ -1,0 +1,63 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.tar.gz
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# bitrix
+
+*.sql
+*.tar.gz
+*.zip
+maillog
+sitemap.xml
+sitemap*.xml
+/.idea
+/vendor/*
+/local/vendor/
+/upload/
+.bash_history
+.composer/
+.cache/
+/bitrix/*
+/bitrix/
+!/bitrix/components/
+!/bitrix/php_interface/include/
+!/bitrix/php_interface/init.php
+!/bitrix/templates/
+/local/components/orbitsoft/amo.form/log.txt
+/local/components/orbitsoft/amo.form/token_info.jsonЗ
+local/components/orbitsoft/amo.form/logs/*
+/local/modules/sprint.migration/
+.sass-cache
+*.css.map
+.htaccess.restore
+.htaccess
+local/params/env/env.php
+local/params/env/env_config.local.php
+sftp-config.json
+cgi-bin
+/local/
+/uploads/
