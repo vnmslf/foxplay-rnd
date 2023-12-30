@@ -60,4 +60,7 @@ local/params/env/env_config.local.php
 sftp-config.json
 cgi-bin
 /local/
-/uploads/
+/upload/
+bitrix
+local
+upload
