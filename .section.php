@@ -1,9 +1,9 @@
 <?
 $sSectionName = 'Главная';
 $arDirProperties = array(
-    'title' => 'Сайт частного вебмастера Михаила Березкина',
-    'description' => 'Сайт частного вебмастера Михаила Березкина - создание, обслуживание, развитие и продвижение сайтов на 1С-Битрикс',
-    'keywords' => 'создание сайта, сайт на 1С-Битрикс, сайт на битрикс',
+    'title' => 'Play with Fox',
+    'description' => 'Play with Fox',
+    'keywords' => '',
     'robots' => 'index, follow'
 );
 ?>
