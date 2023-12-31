@@ -59,8 +59,6 @@ local/params/env/env.php
 local/params/env/env_config.local.php
 sftp-config.json
 cgi-bin
-/local/
 /upload/
 bitrix
-local
 upload

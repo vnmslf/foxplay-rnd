@@ -2,9 +2,10 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				<h1>Когда-нибудь...FOXPLAY</h1>
-				<p>Тут появятся различные приколюхи, интересные штуки, полезные вещи по сайтам, SEO-продвижению, а может быть и различным видам рекламы.</p>
+			<div class="col mt-5 text-center">
+				<h1>PLAY WITH FOX</h1>
+				<p>Добро пожаловать на сайт Foxplay! Приятного времяпрепровождения! Сайт находится в разработке.</p>
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/fox.jpg" alt="" />
 			</div>
 		</div>
 	</div>
