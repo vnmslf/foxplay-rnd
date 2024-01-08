@@ -65,14 +65,14 @@ IncludeTemplateLangFile(__FILE__);?>
 	<div id="cursor"></div>
 	<div id="preloader">
 		<div class="loading-area">
-			<?/*<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />*/?>
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
 			<span>загрузка...</span>
 		</div>
 		<div class="left-side"></div>
 		<div class="right-side"></div>
 	</div>
 	<div class="overlay-menu d-flex align-items-start flex-column">
-		<?/*<nav class="navbar navbar-light">
+		<nav class="navbar navbar-light">
 			<div class="container">
 				<a class="navbar-brand text-white" href="/">
 					<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
@@ -111,13 +111,13 @@ IncludeTemplateLangFile(__FILE__);?>
 		);?>
 		<footer class="text-center mt-auto">
 			<div class="container">
-				<span class="copyright">© 2023 &mdash; <?=date('Y')?> Play with Fox</span>
+				<span class="copyright">© <?=date('Y')?> professional161.ru</span>
 			</div>
-		</footer>*/?>
+		</footer>
 	</div>
 	<div class="site-wrapper">
 		<header>
-			<?/*<nav class="navbar navbar-light">
+			<nav class="navbar navbar-light">
 				<div class="container d-flex">
 					<a class="navbar-brand" href="/">
 						<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
@@ -135,5 +135,5 @@ IncludeTemplateLangFile(__FILE__);?>
 						</li>
 					</ul>
 				</div>
-			</nav>*/?>
+			</nav>
 		</header>

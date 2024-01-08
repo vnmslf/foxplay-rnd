@@ -1,11 +1,11 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 $icon['beget'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].SITE_TEMPLATE_PATH.'/images/beget.svg');?>
-	<footer class="fixed-bottom">
+	<footer class="dark-footer fixed-bottom">
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
-				<?/*<div class="col-auto text-center">
-					2023 &mdash; <?=date('Y')?> &copy; Play with Fox
+				<div class="col-auto text-center">
+					<?=date('Y')?> &copy; professional161.ru
 				</div>
 				<div class="col-lg-2 col-auto text-lg-right text-left">
 					<!--noindex-->
@@ -22,7 +22,7 @@ $icon['beget'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].SITE_TEMPLATE_PATH.
 						</div>
 					</div>
 					<!--/noindex-->
-				</div>*/?>
+				</div>
 			</div>
 		</div>
 	</footer>

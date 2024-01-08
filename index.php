@@ -1,4 +1,5 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
+$APPLICATION->SetTitle("Play with Fox");?>
 <section>
 	<div class="container">
 		<div class="row">
@@ -10,4 +11,4 @@
 		</div>
 	</div>
 </section>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>
