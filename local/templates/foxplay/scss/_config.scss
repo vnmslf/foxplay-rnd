@@ -1,0 +1,22 @@
+/* colors*/
+$orange: #fc7d06;
+$white: #fff;
+$black: #000;
+$black_01: rgba($black, .9);
+$dark: #111;
+
+/* breakpoints*/
+$breakpoints: (
+	zero: 0,
+	smallest: 424px,
+	small: 480px,
+	xsmall: 600px,
+	medium: 768px,
+	medium-inc: 769px,
+	xmedium: 992px,
+	large: 1024px,
+	xlarge: 1280px,
+	xxlarge: 1440px,
+	prewide: 1880px,
+	wide: 1920px,
+);

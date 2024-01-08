@@ -1,0 +1,53 @@
+/* colors*/
+/* breakpoints*/
+/* 480   small*/
+/* 768   medium*/
+/* 992   xmedium*/
+/* 1024  large*/
+/* 1280  xlarge*/
+/* 1440  xxlarge*/
+/* 1920  big*/
+/* buttons mixins*/
+/* links*/
+/* flex mixes*/
+/* CUSTOM: product mixins*/
+/* owl */
+/* /owl */
+.overlay-menu .navbar-light .header__menu li a {
+  color: #fff; }
+  .overlay-menu .navbar-light .header__menu li a:hover {
+    color: #fc7d06; }
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 400px; }
+  .header__menu .floor__icon {
+    width: 25px; }
+  .header__menu li {
+    list-style: none; }
+    .header__menu li a {
+      font-weight: 600;
+      font-size: 1.1rem; }
+
+/*.test {
+  position: absolute;
+  z-index: 1000;
+  display: block;
+  width: 1px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  background: red;
+}*/

@@ -6,7 +6,6 @@ $APPLICATION->SetTitle("Play with Fox");?>
 			<div class="col mt-5 text-center">
 				<h1>PLAY WITH FOX</h1>
 				<p>Добро пожаловать на сайт Foxplay! Приятного времяпрепровождения! Сайт находится в разработке.</p>
-				<img src="<?=SITE_TEMPLATE_PATH?>/images/fox.jpg" alt="" />
 			</div>
 		</div>
 	</div>

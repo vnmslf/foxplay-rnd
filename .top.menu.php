@@ -1,46 +1,46 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Тут", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Тут',
+		'/',
+		Array(),
+		Array(),
+		''
 	),
 	Array(
-		"Будут", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Будут',
+		'/',
+		Array(),
+		Array(),
+		''
 	),
 	Array(
-		"Разные", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Разные',
+		'/',
+		Array(),
+		Array(),
+		''
 	),
 	Array(
-		"Прекрасные", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Прекрасные',
+		'/',
+		Array(),
+		Array(),
+		''
 	),
 	Array(
-		"Пункты", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Пункты',
+		'/',
+		Array(),
+		Array(),
+		''
 	),
 	Array(
-		"Меню", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
+		'Меню',
+		'/',
+		Array(),
+		Array(),
+		''
 	)
 );
 ?>

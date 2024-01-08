@@ -38,18 +38,11 @@ sitemap*.xml
 /vendor/*
 /local/vendor/
 /upload/
+upload
 .bash_history
 .composer/
 .cache/
-/bitrix/*
 /bitrix/
-!/bitrix/components/
-!/bitrix/php_interface/include/
-!/bitrix/php_interface/init.php
-!/bitrix/templates/
-/local/components/orbitsoft/amo.form/log.txt
-/local/components/orbitsoft/amo.form/token_info.jsonЗ
-local/components/orbitsoft/amo.form/logs/*
 /local/modules/sprint.migration/
 .sass-cache
 *.css.map
@@ -59,6 +52,3 @@ local/params/env/env.php
 local/params/env/env_config.local.php
 sftp-config.json
 cgi-bin
-/upload/
-bitrix
-upload

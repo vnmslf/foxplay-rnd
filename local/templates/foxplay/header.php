@@ -25,18 +25,19 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/imagesloaded.pkgd.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/infinite-scroll.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/masonry.pkgd.min.js');
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/slick.min.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/jquery.stellar.js');
-Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/jquery.stellar.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.min.js');
 //Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/custom.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/all.min.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/slick.css');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/ionicons.min.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/main__styles.min.css');
 IncludeTemplateLangFile(__FILE__);?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<meta charset="utf-8">
-	<link rel="alternate" hreflang="x-default" href="https://dariaphoto161.ru/" />
+	<link rel="alternate" hreflang="x-default" href="https://foxplay-rnd.ru/" />
 	<?$APPLICATION->ShowHead();?>
 	<link rel="apple-touch-icon" sizes="57x57" href="<?=SITE_TEMPLATE_PATH?>/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="<?=SITE_TEMPLATE_PATH?>/favicon/apple-icon-60x60.png">
@@ -65,7 +66,7 @@ IncludeTemplateLangFile(__FILE__);?>
 	<div id="cursor"></div>
 	<div id="preloader">
 		<div class="loading-area">
-			<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
+			<img src="<?=SITE_TEMPLATE_PATH?>/images/fox.svg" alt="Fox logotype in preloader" />
 			<span>загрузка...</span>
 		</div>
 		<div class="left-side"></div>
@@ -75,11 +76,51 @@ IncludeTemplateLangFile(__FILE__);?>
 		<nav class="navbar navbar-light">
 			<div class="container">
 				<a class="navbar-brand text-white" href="/">
-					<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
+					<img src="<?=SITE_TEMPLATE_PATH?>/images/fox.svg" alt="Fox logotype in menu" />
 				</a>
+				<?$APPLICATION->IncludeComponent(
+					'bitrix:menu',
+					'header_menu',
+					Array(
+						'ALLOW_MULTI_SELECT' => 'N',
+						'CHILD_MENU_TYPE' => 'left',
+						'DELAY' => 'N',
+						'MAX_LEVEL' => '4',
+						'MENU_CACHE_GET_VARS' => array(
+							0 => '',
+						),
+						'MENU_CACHE_TIME' => '3600',
+						'MENU_CACHE_TYPE' => 'A',
+						'MENU_CACHE_USE_GROUPS' => 'Y',
+						'MENU_THEME' => 'blue',
+						'ROOT_MENU_TYPE' => 'header__left',
+						'USE_EXT' => 'Y',
+					),
+					false
+				);?>
 				<div class="close-icon">
 					<i class="fas fa-times"></i>
 				</div>
+				<?$APPLICATION->IncludeComponent(
+					'bitrix:menu',
+					'header_menu',
+					Array(
+						'ALLOW_MULTI_SELECT' => 'N',
+						'CHILD_MENU_TYPE' => 'left',
+						'DELAY' => 'N',
+						'MAX_LEVEL' => '4',
+						'MENU_CACHE_GET_VARS' => array(
+							0 => '',
+						),
+						'MENU_CACHE_TIME' => '3600',
+						'MENU_CACHE_TYPE' => 'A',
+						'MENU_CACHE_USE_GROUPS' => 'Y',
+						'MENU_THEME' => 'blue',
+						'ROOT_MENU_TYPE' => 'header__right',
+						'USE_EXT' => 'Y',
+					),
+					false
+				);?>
 				<ul class="social-icons light list-inline">
 					<li class="list-inline-item">
 						<a href="tg://resolve?domain=miberezkin" target="_blank">
@@ -111,7 +152,7 @@ IncludeTemplateLangFile(__FILE__);?>
 		);?>
 		<footer class="text-center mt-auto">
 			<div class="container">
-				<span class="copyright">© <?=date('Y')?> professional161.ru</span>
+				<span class="copyright">© <?=date('Y')?> foxplay-rnd.ru</span>
 			</div>
 		</footer>
 	</div>
@@ -120,13 +161,53 @@ IncludeTemplateLangFile(__FILE__);?>
 			<nav class="navbar navbar-light">
 				<div class="container d-flex">
 					<a class="navbar-brand" href="/">
-						<img src="<?=SITE_TEMPLATE_PATH?>/images/logo.svg" alt="Логотип" />
+						<img src="<?=SITE_TEMPLATE_PATH?>/images/fox.svg" alt="Fox logotype in header" />
 					</a>
+					<?$APPLICATION->IncludeComponent(
+						'bitrix:menu',
+						'header_menu',
+						Array(
+							'ALLOW_MULTI_SELECT' => 'N',
+							'CHILD_MENU_TYPE' => 'left',
+							'DELAY' => 'N',
+							'MAX_LEVEL' => '4',
+							'MENU_CACHE_GET_VARS' => array(
+								0 => '',
+							),
+							'MENU_CACHE_TIME' => '3600',
+							'MENU_CACHE_TYPE' => 'A',
+							'MENU_CACHE_USE_GROUPS' => 'Y',
+							'MENU_THEME' => 'blue',
+							'ROOT_MENU_TYPE' => 'header__left',
+							'USE_EXT' => 'Y',
+						),
+						false
+					);?>
 					<div class="menu-icon justify-content-end">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
+					<?$APPLICATION->IncludeComponent(
+						'bitrix:menu',
+						'header_menu',
+						Array(
+							'ALLOW_MULTI_SELECT' => 'N',
+							'CHILD_MENU_TYPE' => 'left',
+							'DELAY' => 'N',
+							'MAX_LEVEL' => '4',
+							'MENU_CACHE_GET_VARS' => array(
+								0 => '',
+							),
+							'MENU_CACHE_TIME' => '3600',
+							'MENU_CACHE_TYPE' => 'A',
+							'MENU_CACHE_USE_GROUPS' => 'Y',
+							'MENU_THEME' => 'blue',
+							'ROOT_MENU_TYPE' => 'header__right',
+							'USE_EXT' => 'Y',
+						),
+						false
+					);?>
 					<ul class="social-icons list-inline">
 						<li class="list-inline-item">
 							<a href="tg://resolve?domain=miberezkin" target="_blank" title="Связаться со мной в Telegram">

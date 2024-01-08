@@ -3,25 +3,9 @@ IncludeTemplateLangFile(__FILE__);
 $icon['beget'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].SITE_TEMPLATE_PATH.'/images/beget.svg');?>
 	<footer class="dark-footer fixed-bottom">
 		<div class="container">
-			<div class="row justify-content-between align-items-center">
+			<div class="row justify-content-center align-items-center">
 				<div class="col-auto text-center">
-					<?=date('Y')?> &copy; professional161.ru
-				</div>
-				<div class="col-lg-2 col-auto text-lg-right text-left">
-					<!--noindex-->
-					<div class="row no-gutters hosting">
-						<div class="col-6">
-							<a href="https://beget.com/" target="_blank">
-								<span>Сайт работает</span><span>на хостинге</span>
-							</a>
-						</div>
-						<div class="col-6">
-							<a href="https://beget.com/" target="_blank">
-								<?=$icon['beget']?>
-							</a>
-						</div>
-					</div>
-					<!--/noindex-->
+					2023 &mdash; <?=date('Y')?> &copy; foxplay-rnd.ru
 				</div>
 			</div>
 		</div>
