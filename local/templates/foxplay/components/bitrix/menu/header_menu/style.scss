@@ -8,6 +8,12 @@
 					&:hover {
 						color: $orange;
 					}
+					&.selected {
+						color: $orange;
+						&:hover {
+							color: $white;
+						}
+					}
 				}
 			}
 		}
@@ -24,7 +30,7 @@
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	gap: 20px;
+	gap: 0px;
 	padding: 0;
 	margin: 0;
 	width: 400px;
@@ -34,8 +40,15 @@
 	li {
 		list-style: none;
 		a {
+			padding: 14px 22px;
 			font-weight: 600;
 			font-size: 1.1rem;
+			&.selected {
+				color: $orange;
+				&:hover {
+					color: $black;
+				}
+			}
 		}
 	}
 }

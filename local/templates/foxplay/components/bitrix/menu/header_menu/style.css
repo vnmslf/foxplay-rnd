@@ -17,6 +17,10 @@
   color: #fff; }
   .overlay-menu .navbar-light .header__menu li a:hover {
     color: #fc7d06; }
+  .overlay-menu .navbar-light .header__menu li a.selected {
+    color: #fc7d06; }
+    .overlay-menu .navbar-light .header__menu li a.selected:hover {
+      color: #fff; }
 
 .header__menu {
   display: -webkit-box;
@@ -29,7 +33,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
   padding: 0;
   margin: 0;
   width: 400px; }
@@ -38,8 +42,13 @@
   .header__menu li {
     list-style: none; }
     .header__menu li a {
+      padding: 14px 22px;
       font-weight: 600;
       font-size: 1.1rem; }
+      .header__menu li a.selected {
+        color: #fc7d06; }
+        .header__menu li a.selected:hover {
+          color: #000; }
 
 /*.test {
   position: absolute;

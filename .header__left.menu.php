@@ -2,14 +2,14 @@
 $aMenuLinks = Array(
 	Array(
 		'Мафия',
-		'/',
+		'/mafiya/',
 		Array(),
 		Array(),
 		''
 	),
 	Array(
-		'Покер',
-		'/',
+		'Настолки',
+		'/nastolki/',
 		Array(),
 		Array(),
 		''

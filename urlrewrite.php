@@ -1,5 +1,13 @@
 <?php
 $arUrlRewrite=array (
+  3 => 
+  array (
+    'CONDITION' => '#^/vse-pro-igry/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/vse-pro-igry/index.php',
+    'SORT' => 100,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/services/#',
