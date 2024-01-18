@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class INFO120240118194934 extends Version
+class Version120240118220242 extends Version
 {
     protected $description = "";
 
@@ -44,7 +44,6 @@ class INFO120240118194934 extends Version
   'LID' => 
   array (
     0 => 'f1',
-    1 => 's1',
   ),
   'CODE' => 'vse-pro-igry',
   'API_CODE' => 'vseproigry',
@@ -52,10 +51,10 @@ class INFO120240118194934 extends Version
   'NAME' => 'Все про игры',
   'ACTIVE' => 'Y',
   'SORT' => '1',
-  'LIST_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/#SECTION_CODE_PATH#/#ELEMENT_CODE#/',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/#SECTION_CODE_PATH#/',
-  'CANONICAL_PAGE_URL' => '',
+  'LIST_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/#SECTION_CODE_PATH#/#ELEMENT_CODE#/',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/#SECTION_CODE_PATH#/',
+  'CANONICAL_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/#SECTION_CODE_PATH#/#ELEMENT_CODE#/',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
   'DESCRIPTION_TYPE' => 'html',
@@ -86,7 +85,7 @@ class INFO120240118194934 extends Version
   'ELEMENT_NAME' => 'Элемент',
   'EXTERNAL_ID' => NULL,
   'LANG_DIR' => '/',
-  'SERVER_NAME' => 'professional161.ru',
+  'SERVER_NAME' => 'foxplay-rnd.local',
   'IPROPERTY_TEMPLATES' => 
   array (
   ),
