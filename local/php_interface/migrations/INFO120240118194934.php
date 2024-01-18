@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class F120240109223801 extends Version
+class INFO120240118194934 extends Version
 {
     protected $description = "";
 
@@ -44,6 +44,7 @@ class F120240109223801 extends Version
   'LID' => 
   array (
     0 => 'f1',
+    1 => 's1',
   ),
   'CODE' => 'vse-pro-igry',
   'API_CODE' => 'vseproigry',
@@ -51,9 +52,9 @@ class F120240109223801 extends Version
   'NAME' => 'Все про игры',
   'ACTIVE' => 'Y',
   'SORT' => '1',
-  'LIST_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/#SECTION_CODE_PATH#/#ELEMENT_CODE#/',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/#IBLOCK_CODE#/#SECTION_CODE_PATH#/',
+  'LIST_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/#SECTION_CODE_PATH#/#ELEMENT_CODE#/',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/vse-pro-igry/#SECTION_CODE_PATH#/',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -85,7 +86,7 @@ class F120240109223801 extends Version
   'ELEMENT_NAME' => 'Элемент',
   'EXTERNAL_ID' => NULL,
   'LANG_DIR' => '/',
-  'SERVER_NAME' => 'foxplay-rnd.local',
+  'SERVER_NAME' => 'professional161.ru',
   'IPROPERTY_TEMPLATES' => 
   array (
   ),

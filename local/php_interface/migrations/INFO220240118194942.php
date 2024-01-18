@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class F120240109223810 extends Version
+class INFO220240118194942 extends Version
 {
     protected $description = "";
 
@@ -25,16 +25,6 @@ class F120240109223810 extends Version
         $helper->Iblock()->addSectionsFromTree(
             $iblockId,
             array (
-  0 => 
-  array (
-    'NAME' => 'История игр',
-    'CODE' => 'istoriya-igr',
-    'SORT' => '500',
-    'ACTIVE' => 'Y',
-    'XML_ID' => NULL,
-    'DESCRIPTION' => '',
-    'DESCRIPTION_TYPE' => 'text',
-  ),
 )        );
     }
 
