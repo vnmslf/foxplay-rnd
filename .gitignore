@@ -44,7 +44,7 @@ upload
 .composer/
 .cache/
 /bitrix/
-/local/modules/
+/local/modules/sprint.migration/
 .sass-cache
 *.css.map
 .htaccess.restore
