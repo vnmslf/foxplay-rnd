@@ -103,8 +103,10 @@ h6 {
 a {
 	color: $black_01;
 	outline: 0;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	@include transition();
+	* {
+		@include transition();
+	}
 }
 a:hover {
 	color: #ff8800;
