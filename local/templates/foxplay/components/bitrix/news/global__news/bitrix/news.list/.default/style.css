@@ -185,11 +185,13 @@
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          gap: 4px; }
+          gap: 12px; }
           .listing .container .list__blocks .block .list .item .info .announce {
             font-size: 14px;
             line-height: 18px; }
           .listing .container .list__blocks .block .list .item .info a {
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
             border-radius: 4px;
             font-size: 13px;
             padding: 6px 12px;
@@ -198,3 +200,8 @@
             border-color: #fc7d06;
             color: white;
             text-decoration: none; }
+            .listing .container .list__blocks .block .list .item .info a:hover {
+              /*@include btn();*/
+              background-color: #000;
+              border-color: #000;
+              color: white; }

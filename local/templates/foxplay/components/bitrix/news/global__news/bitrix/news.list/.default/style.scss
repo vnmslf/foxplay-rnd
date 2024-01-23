@@ -191,15 +191,19 @@
 							-webkit-box-align: center;
 							    -ms-flex-align: center;
 							        align-items: center;
-							gap: 4px;
+							gap: 12px;
 							.announce {
 								font-size: 14px;
 								line-height: 18px;
 							}
 							a {
+								@include default-transition();
 								@include btn-small();
 								@include btn-color-default($orange);
 								text-decoration: none;
+								&:hover {
+									@include btn-color-default($black);
+								}
 							}
 						}
 					}

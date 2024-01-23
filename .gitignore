@@ -35,8 +35,6 @@ maillog
 sitemap.xml
 sitemap*.xml
 /.idea
-/vendor/*
-/local/vendor/
 /upload/
 upload
 /bitrix

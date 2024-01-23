@@ -1,4 +1,6 @@
-<?if (isset($_GET['noinit']) && !empty($_GET['noinit']))
+<?
+include_once ($_SERVER['DOCUMENT_ROOT'].'/local/vendor/autoload.php');
+if (isset($_GET['noinit']) && !empty($_GET['noinit']))
 {
 	$strNoInit = strval($_GET['noinit']);
 	if ($strNoInit == 'N')
@@ -49,4 +51,34 @@ function deleteKernelJs(&$content) {
 
 	$content = preg_replace($arPatternsToRemove, "", $content);
 	$content = preg_replace("/\n{2,}/", "\n\n", $content);
+}
+AddEventHandler('iblock', 'OnBeforeIBlockElementAdd', 'OnBeforeIBlockElementHandler');
+AddEventHandler('iblock', 'OnBeforeIBlockElementUpdate', 'OnBeforeIBlockElementHandler');
+AddEventHandler('iblock', 'OnBeforeIBlockSectionAdd', 'OnBeforeIBlockElementHandler');
+AddEventHandler('iblock', 'OnBeforeIBlockSectionUpdate', 'OnBeforeIBlockElementHandler');
+function OnBeforeIBlockElementHandler(&$arFields) {
+	$t = new \Akh\Typograf\Typograf();
+	$simpleRule = new class extends \Akh\Typograf\Rule\AbstractRule {
+		public $name = 'Замена "при" и "это"';
+		protected $sort = 1000;
+		public function handler(string $text): string {
+			$text = str_replace("при ", "при&nbsp;", $text);
+			$text = str_replace("При ", "При&nbsp;", $text);
+			$text = str_replace("это ", "это&nbsp;", $text);
+			$text = str_replace("Это ", "Это&nbsp;", $text);
+			return $text;
+		}
+	};
+	$t->addRule($simpleRule);
+	if(!empty($arFields['PREVIEW_TEXT'])) {
+		$typoText = $t->apply($arFields['PREVIEW_TEXT']);
+		$arFields['PREVIEW_TEXT'] = $typoText;
+	} elseif(!empty($arFields['DESCRIPTION'])) {
+		$typoText = $t->apply($arFields['DESCRIPTION']);
+		$arFields['DESCRIPTION'] = $typoText;
+	}
+	if(!empty($arFields['DETAIL_TEXT'])) {
+		$typoText = $t->apply($arFields['DETAIL_TEXT']);
+		$arFields['DETAIL_TEXT'] = $typoText;
+	}
 }?>
