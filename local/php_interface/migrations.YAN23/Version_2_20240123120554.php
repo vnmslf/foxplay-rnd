@@ -3,11 +3,11 @@
 namespace Sprint\Migration;
 
 
-class Version220240118220246 extends Version
+class Version_2_20240123120554 extends Version
 {
     protected $description = "";
 
-    protected $moduleVersion = "4.3.1";
+    protected $moduleVersion = "4.6.2";
 
     /**
      * @throws Exceptions\HelperException

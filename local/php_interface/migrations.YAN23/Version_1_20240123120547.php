@@ -3,11 +3,11 @@
 namespace Sprint\Migration;
 
 
-class Version120240118220242 extends Version
+class Version_1_20240123120547 extends Version
 {
     protected $description = "";
 
-    protected $moduleVersion = "4.3.1";
+    protected $moduleVersion = "4.6.2";
 
     /**
      * @throws Exceptions\HelperException
@@ -85,7 +85,6 @@ class Version120240118220242 extends Version
   'ELEMENT_NAME' => 'Элемент',
   'EXTERNAL_ID' => NULL,
   'LANG_DIR' => '/',
-  'SERVER_NAME' => 'foxplay-rnd.local',
   'IPROPERTY_TEMPLATES' => 
   array (
   ),
@@ -117,8 +116,8 @@ class Version120240118220242 extends Version
   'ACTIVE_FROM' => 
   array (
     'NAME' => 'Начало активности',
-    'IS_REQUIRED' => 'N',
-    'DEFAULT_VALUE' => '',
+    'IS_REQUIRED' => 'Y',
+    'DEFAULT_VALUE' => '=today',
     'VISIBLE' => 'Y',
   ),
   'ACTIVE_TO' => 
@@ -410,7 +409,12 @@ class Version120240118220242 extends Version
     array (
       'columns' => 
       array (
-        0 => '',
+        0 => 'NAME',
+        1 => 'ACTIVE',
+        2 => 'DATE_ACTIVE_FROM',
+        3 => 'SORT',
+        4 => 'TIMESTAMP_X',
+        5 => 'ID',
       ),
       'columns_sizes' => 
       array (
