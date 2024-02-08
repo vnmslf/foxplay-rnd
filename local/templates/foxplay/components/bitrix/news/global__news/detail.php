@@ -73,7 +73,7 @@ $ElementID = $APPLICATION->IncludeComponent(
 	['HIDE_ICONS' => 'Y']
 );?>
 <p><a href='<?=$arResult['FOLDER'].$arResult['URL_TEMPLATES']['news']?>'><?=GetMessage('T_NEWS_DETAIL_BACK')?></a></p>
-<?if($arParams['USE_RATING']=='Y' && $ElementID) {
+<?/*if($arParams['USE_RATING']=='Y' && $ElementID) {
 	$APPLICATION->IncludeComponent(
 		'bitrix:iblock.vote',
 		'',
@@ -170,4 +170,4 @@ if($arParams['USE_REVIEW'] == 'Y' && IsModuleInstalled('forum') && $ElementID) {
 		$component,
 		['HIDE_ICONS' => 'Y']
 	);
-}
+}*/
