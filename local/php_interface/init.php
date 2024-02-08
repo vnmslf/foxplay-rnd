@@ -81,4 +81,4 @@ function OnBeforeIBlockElementHandler(&$arFields) {
 		$typoText = $t->apply($arFields['DETAIL_TEXT']);
 		$arFields['DETAIL_TEXT'] = $typoText;
 	}
-}?>
+}
