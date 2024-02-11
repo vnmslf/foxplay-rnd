@@ -15,7 +15,21 @@ $this->setFrameMode(true);
 <section class="article">
 	<div class="container">
 		<div class="article__header">
-			<span class="date"><?=$arResult['DISPLAY_ACTIVE_FROM']?></span>
+			<div class="article__about">
+				<span class="day">
+					<span class="day__header"></span>
+					<span class="day__body"><?=$arResult['day']['number']?></span>
+					<span class="day__footer">
+						<?=$arResult['day']['month']?>
+						<span class="day__year"><?=$arResult['day']['year']?></span>
+					</span>
+				</span>
+				<span class="read">
+					<span class="read__header"></span>
+					<span class="read__body"><?=$arResult['READ_TIME']?>-<?=$arResult['READ_TIME'] + 2?> мин</span>
+					<span class="read__footer">время чтения</span>
+				</span>
+			</div>
 			<h1><?=$arResult['NAME']?></h1>
 		</div>
 		<div class="article__body">

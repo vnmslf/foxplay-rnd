@@ -25,7 +25,10 @@ $this->setFrameMode(true);
 							<span class="day">
 								<span class="day__header"></span>
 								<span class="day__body"><?=$arItem['day']['number']?></span>
-								<span class="day__footer"><?=$arItem['day']['month']?></span>
+								<span class="day__footer">
+									<?=$arItem['day']['month']?>
+									<span class="day__year"><?=$arItem['day']['year']?>г.</span>
+								</span>
 							</span>
 							<?=$arItem['NAME']?>
 						</a>

@@ -17,7 +17,208 @@ section.article .container {
   -ms-flex-direction: column;
   flex-direction: column; }
   section.article .container .article__header {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+    section.article .container .article__header .article__about {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 20px; }
+      section.article .container .article__header .article__about .day {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        background: #000;
+        border-radius: 0 0 4px 4px;
+        color: #fff;
+        font-weight: 700;
+        width: 68px;
+        min-width: 68px;
+        padding: 12px 8px 8px;
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 4px;
+        -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2); }
+        section.article .container .article__header .article__about .day:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          display: block;
+          top: -2px;
+          left: 0;
+          right: 0;
+          height: 8px;
+          border: 1px solid #000;
+          border-radius: 4px 4px 0 0;
+          background: #fff;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        section.article .container .article__header .article__about .day .day__header {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
+          section.article .container .article__header .article__about .day .day__header:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            display: block;
+            top: -6px;
+            right: 15%;
+            width: 4px;
+            height: 10px;
+            border: 1px solid #000;
+            border-radius: 2px;
+            background: #fff;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+          section.article .container .article__header .article__about .day .day__header:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            display: block;
+            top: -6px;
+            left: 15%;
+            width: 4px;
+            height: 10px;
+            border: 1px solid #000;
+            border-radius: 2px;
+            background: #fff;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+        section.article .container .article__header .article__about .day .day__body {
+          font-size: 24px;
+          line-height: 24px; }
+        section.article .container .article__header .article__about .day .day__footer {
+          font-size: 9px;
+          line-height: 9px;
+          text-align: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          gap: 6px; }
+          section.article .container .article__header .article__about .day .day__footer .day__year {
+            font-size: 14px;
+            margin-bottom: 4px; }
+        section.article .container .article__header .article__about .day:hover {
+          background: #fc7d06;
+          -webkit-box-shadow: 0px 0px 20px 4px rgba(252, 125, 6, 0.3);
+          box-shadow: 0px 0px 20px 4px rgba(252, 125, 6, 0.3); }
+          section.article .container .article__header .article__about .day:hover:before {
+            border-color: #fc7d06; }
+          section.article .container .article__header .article__about .day:hover .day__header:before, section.article .container .article__header .article__about .day:hover .day__header:after {
+            border-color: #fc7d06; }
+      section.article .container .article__header .article__about .read {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        background: #000;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 700;
+        width: 68px;
+        min-width: 68px;
+        padding: 8px 8px 8px 12px;
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 4px;
+        -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2); }
+        section.article .container .article__header .article__about .read:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          display: block;
+          top: 0;
+          left: 0px;
+          bottom: 0;
+          width: 8px;
+          border: 1px solid #000;
+          border-radius: 4px 0 0 4px;
+          background: #fff;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        section.article .container .article__header .article__about .read .read__header {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
+          section.article .container .article__header .article__about .read .read__header:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            display: block;
+            top: 15%;
+            left: -3px;
+            width: 10px;
+            height: 4px;
+            border: 1px solid #000;
+            border-radius: 2px;
+            background: #fff;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+          section.article .container .article__header .article__about .read .read__header:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            display: block;
+            left: -3px;
+            bottom: 15%;
+            width: 10px;
+            height: 4px;
+            border: 1px solid #000;
+            border-radius: 2px;
+            background: #fff;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+        section.article .container .article__header .article__about .read .read__body {
+          font-size: 20px;
+          line-height: 24px; }
+        section.article .container .article__header .article__about .read .read__footer {
+          font-size: 9px;
+          line-height: 9px; }
+        section.article .container .article__header .article__about .read:hover {
+          background: #fc7d06;
+          -webkit-box-shadow: 0px 0px 20px 4px rgba(252, 125, 6, 0.3);
+          box-shadow: 0px 0px 20px 4px rgba(252, 125, 6, 0.3); }
+          section.article .container .article__header .article__about .read:hover:before {
+            border-color: #fc7d06; }
+          section.article .container .article__header .article__about .read:hover .read__header:before, section.article .container .article__header .article__about .read:hover .read__header:after {
+            border-color: #fc7d06; }
   section.article .container .article__body {
     display: -webkit-box;
     display: -ms-flexbox;
