@@ -29,6 +29,14 @@ $this->setFrameMode(true);
 					<span class="read__body"><?=$arResult['READ_TIME']?>-<?=$arResult['READ_TIME'] + 2?> мин</span>
 					<span class="read__footer">время чтения</span>
 				</span>
+				<span class="counter">
+					<span class="counter__header"></span>
+					<span class="counter__body"><?=$arResult['SHOW_COUNTER']?></span>
+					<span class="counter__footer">
+						<?=inclination($arResult['SHOW_COUNTER'], array('раз', 'раза', 'раз'))?>
+						<span class="counter__read">прочитано</span>
+					</span>
+				</span>
 			</div>
 			<h1><?=$arResult['NAME']?></h1>
 		</div>

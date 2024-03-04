@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 $icon['beget'] = file_get_contents($_SERVER['DOCUMENT_ROOT'].SITE_TEMPLATE_PATH.'/images/beget.svg');?>
-	<footer class="dark-footer fixed-bottom">
+	<footer class="dark-footer">
 		<div class="container">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-auto text-center">

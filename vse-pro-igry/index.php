@@ -22,7 +22,8 @@ $APPLICATION->SetTitle('Все про игры');
 		'DETAIL_DISPLAY_BOTTOM_PAGER' => 'Y',
 		'DETAIL_DISPLAY_TOP_PAGER' => 'N',
 		'DETAIL_FIELD_CODE' => array(
-			0 => 'PREVIEW_PICTURE'
+			0 => 'PREVIEW_PICTURE',
+			1 => 'SHOW_COUNTER',
 		),
 		'DETAIL_PAGER_SHOW_ALL' => 'Y',
 		'DETAIL_PAGER_TEMPLATE' => '',

@@ -291,3 +291,15 @@ function calculateReadingTime($text, $wordsPerMinute = 50) {
 	$readingTime = ceil($words / $wordsPerMinute);
 	return $readingTime;
 }
+function inclination($time, $arr) {
+	$timex = substr($time, -1);
+	if ($time >= 10 && $time <= 20) {
+		return $arr[2];
+	} elseif ($timex == 1) {
+		return $arr[0];
+	} elseif ($timex > 1 && $timex < 5) {
+		return $arr[1];
+	} else {
+		return $arr[2];
+	}
+}
